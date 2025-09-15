@@ -247,12 +247,12 @@ npx prisma db seed
 
 ### 4. Vercel Configuration
 
-The application includes optimized Vercel configuration:
+The application is optimized for Vercel deployment:
 
-- **`vercel.json`**: Ensures Prisma Client is generated during build
-- **`postinstall` script**: Automatically generates Prisma Client after npm install
 - **Build script**: Includes `prisma generate` before Next.js build
+- **`postinstall` script**: Automatically generates Prisma Client after npm install
 - **Prisma in dependencies**: Ensures Prisma is available during Vercel build process
+- **No custom vercel.json**: Next.js handles build process automatically
 
 ### 5. Environment Variables in Vercel Dashboard
 Add these in your Vercel project settings:
